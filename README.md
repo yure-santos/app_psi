@@ -1,6 +1,7 @@
 # app_psi
 
-A new Flutter project.
+As Cores estão na classe AppColors para facilitar as alterações, e estão em hexaDecimal.
+na Classe LoginPage está a estrutura básica, façam os ajustes conforme o figma.
 
 ## Getting Started
 
