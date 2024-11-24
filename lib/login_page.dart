@@ -1,5 +1,6 @@
 import 'package:app_psi/app_colors.dart';
 import 'package:flutter/material.dart';
+import 'package:app_psi/login_structure.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({super.key});
@@ -41,7 +42,7 @@ class LoginPage extends StatelessWidget {
                     ),
                   ),
 
-                  const SizedBox(height: 16),
+                  const SizedBox(height: 150),
 
                   // Citação
                   const Text(
@@ -54,11 +55,18 @@ class LoginPage extends StatelessWidget {
                     ),
                   ),
 
-                  const SizedBox(height: 32),
+                  const SizedBox(height: 150),
 
                   // Botão de Login, ainda sem ação de transição
                   ElevatedButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                          MaterialPageRoute(
+                            builder: (context) => const LoginStructure()
+                          )
+                      );
+                    },
                     style: ElevatedButton.styleFrom(
                       backgroundColor: AppColors.loginButton,
                       padding: const EdgeInsets.symmetric(
