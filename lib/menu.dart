@@ -22,6 +22,21 @@ class _MenuState extends State<Menu> {
             },
             icon: const Icon(Icons.arrow_back)),
       ),
+      body: Container(
+        decoration: BoxDecoration(
+            gradient: LinearGradient(
+                begin: Alignment.bottomCenter,
+                end: Alignment.center,
+                colors: [
+              AppColors.backgroundColor.withOpacity(0.0),
+              AppColors.backgroundColor.withOpacity(0.5)
+            ])),
+            child: Column(
+              children: [
+                ElevatedButton.icon(onPressed: onPressed, label: label)
+              ],
+            ),
+      ),
     );
   }
 }

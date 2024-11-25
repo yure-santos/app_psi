@@ -45,8 +45,8 @@ class _OtherPageState extends State<OtherPage> {
                 width: double.infinity,
                 child: CircleAvatar(
                   backgroundImage:
-                      AssetImage('assets/simbolo_de_psicologia.jpg'),
-                  maxRadius: 25,
+                      AssetImage('assets/images/simbolo_de_psicologia.jpg'),
+                  maxRadius: 30,
                 ),
               ),
             ),
