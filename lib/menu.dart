@@ -1,4 +1,5 @@
 import 'package:app_psi/app_colors.dart';
+import 'package:app_psi/edit_profile.dart';
 import 'package:flutter/material.dart';
 
 class Menu extends StatefulWidget {
@@ -33,7 +34,19 @@ class _MenuState extends State<Menu> {
             ])),
             child: Column(
               children: [
-                ElevatedButton.icon(onPressed: onPressed, label: label)
+                ElevatedButton.icon(
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                       MaterialPageRoute(builder: (context) => EditProfile()));
+
+                },
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: const Color.fromARGB(255, 69, 108, 194)               ),
+                ),
+                icon: Icon(Icons.person, color: Colors.white),
+                label: Text('Editar Perfil'),
+                )
               ],
             ),
       ),

@@ -124,7 +124,7 @@ class _OtherPageState extends State<OtherPage> {
                               builder: (context) => const Menu()));
                     },
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: AppColors.appTextBlue,
+                      backgroundColor: const Color.fromARGB(255, 69, 108, 194),
                       padding:
                           EdgeInsets.symmetric(horizontal: 60, vertical: 16),
                       shape: RoundedRectangleBorder(
@@ -146,7 +146,7 @@ class _OtherPageState extends State<OtherPage> {
                               builder: (context) => const Menu()));
                     },
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: AppColors.appTextBlue,
+                      backgroundColor: const Color.fromARGB(255, 69, 108, 194),
                       padding:
                           EdgeInsets.symmetric(horizontal: 40, vertical: 16),
                       shape: RoundedRectangleBorder(
