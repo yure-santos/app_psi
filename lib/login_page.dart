@@ -57,7 +57,6 @@ class LoginPage extends StatelessWidget {
 
                   const SizedBox(height: 150),
 
-                  // Botão de Login, ainda sem ação de transição
                   ElevatedButton(
                     onPressed: () {
                       Navigator.push(
@@ -87,10 +86,10 @@ class LoginPage extends StatelessWidget {
 
                   const SizedBox(height: 16),
 
-                  // Botão de Cadastrar
+                  
                   OutlinedButton(
                     onPressed: () {
-                      // Ação do botão de Cadastrar
+                      
                     },
                     style: OutlinedButton.styleFrom(
                       padding: const EdgeInsets.symmetric(

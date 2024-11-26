@@ -23,32 +23,66 @@ class _MenuState extends State<Menu> {
             },
             icon: const Icon(Icons.arrow_back)),
       ),
-      body: Container(
-        decoration: BoxDecoration(
-            gradient: LinearGradient(
-                begin: Alignment.bottomCenter,
-                end: Alignment.center,
-                colors: [
-              AppColors.backgroundColor.withOpacity(0.0),
-              AppColors.backgroundColor.withOpacity(0.5)
-            ])),
-            child: Column(
-              children: [
-                ElevatedButton.icon(
-                  onPressed: () {
-                    Navigator.push(
-                      context,
-                       MaterialPageRoute(builder: (context) => EditProfile()));
-
-                },
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: const Color.fromARGB(255, 69, 108, 194)               ),
-                ),
-                icon: Icon(Icons.person, color: Colors.white),
-                label: Text('Editar Perfil'),
-                )
-              ],
+      body: Center(
+        child: Container(
+          decoration: BoxDecoration(
+              gradient: LinearGradient(
+                  begin: Alignment.bottomCenter,
+                  end: Alignment.center,
+                  colors: [
+                AppColors.backgroundColor.withOpacity(0.0),
+                AppColors.backgroundColor.withOpacity(0.5)
+              ])),
+          child: Column(children: [
+            ElevatedButton.icon(
+              onPressed: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => EditProfile()));
+              },
+              icon: Icon(Icons.person, color: Colors.black),
+              label: Text(
+                'Editar Perfil',
+                style: TextStyle(color: Colors.black, fontSize: 30),
+              ),
             ),
+            Padding(
+              padding: const EdgeInsets.only(top: 16),
+              child: ElevatedButton.icon(
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => EditProfile()));
+                },
+                icon: Icon(
+                  Icons.key,
+                  color: Colors.black,
+                ),
+                label: Text(
+                  'Segurança',
+                  style: TextStyle(color: Colors.black, fontSize: 30),
+                ),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.only(top: 16),
+              child: ElevatedButton.icon(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => EditProfile()),
+                  );
+                },
+                icon: Icon(
+                  Icons.bookmark_outline,
+                  color: Colors.black,
+                ),
+                label: Text(
+                  'Tags',
+                  style: TextStyle(color: Colors.black, fontSize: 35),
+                ),
+              ),
+            )
+          ]),
+        ),
       ),
     );
   }
