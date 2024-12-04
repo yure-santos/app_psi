@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "541550598497",
+    "project_id": "appsi-f6be4",
+    "storage_bucket": "appsi-f6be4.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:541550598497:android:1dc91803d9dc9df7710d20",
+        "android_client_info": {
+          "package_name": "com.example.app_psi"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC1ahV-evsGgCy9bqz8I21qNzWaXiYxxTw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
